@@ -57,7 +57,7 @@ ul li a{
     gap: 40px;
     transition: .5s;
 }
-ul li a:hover , .active, .data-info .box:hover{
+ul li a:hover , .active, .data-info .box:hover, td:hover{
     background-color: #ffffff55;
 }
 .log-out{
@@ -110,3 +110,28 @@ ul li a i{
 .data-info .box .data span{
     font-size: 30px;
 }
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+}
+td, th{
+    background-color: #123;
+    height: 40px;
+    border-radius: 8px;
+}
+th{
+    background-color: #0080ff;
+}
+.price , .count{
+    padding: 6px;
+    border-radius: 6px;
+}
+.price{
+    background-color: green;
+}
+.count{
+    background-color: yellow;
+    color: black;
+}
+
