@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family:sans-serif;
+}
+body{
+    background-color: #001;
+}
+.img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border:3px white solid;
+    flex-shrink: 0;
+}
+.img-box img{
+    width: 100%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20;
+
+}
+.profile h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.menu{
+    width: 60px;
+    background-color:#123;
+    height: 100vh;
+    padding: 20px ;
+    overflow: hidden;
+    transition: .5s;
+}
+.menu:hover{
+    width: 260px;
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+    display: flex;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    align-items: center;
+    gap: 40px;
+    transition: .5s;
+}
+ul li a:hover , .active{
+    background-color: #ffffff55;
+}
+.log-out{
+     position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.log-out a{
+    background-color: #a00;
+}
+ul li a i{
+    font-size: 30px;
+}
