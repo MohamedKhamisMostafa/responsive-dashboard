@@ -6,6 +6,7 @@
 }
 body{
     background-color: #001;
+    display: flex;
 }
 .img-box{
     width: 50px;
@@ -56,7 +57,7 @@ ul li a{
     gap: 40px;
     transition: .5s;
 }
-ul li a:hover , .active{
+ul li a:hover , .active, .data-info .box:hover{
     background-color: #ffffff55;
 }
 .log-out{
@@ -68,5 +69,44 @@ ul li a:hover , .active{
     background-color: #a00;
 }
 ul li a i{
+    font-size: 30px;
+}
+.content{
+    width: 100%;
+    margin: 10px;
+}
+.title-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0481ff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.data-info .box{
+    background-color: #123;
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.data-info .box i{
+    font-size: 40px;
+}
+.data-info .box .data{
+    text-align: center;
+}
+.data-info .box .data span{
     font-size: 30px;
 }
